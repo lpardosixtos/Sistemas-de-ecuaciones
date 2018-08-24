@@ -3,8 +3,8 @@
 
 using namespace std;
 
+//esto es algo nuevo
 
-// esto es una prueba
 int main(){
 
     char tipo;
