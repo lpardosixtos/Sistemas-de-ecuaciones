@@ -5,7 +5,6 @@
 using namespace std;
 
 int main(){
-
     int sz;
     cout << "Ingrese el numero del caso a evaluar (4, 100, 500)" <<"\n";
     string casesN;
@@ -25,7 +24,6 @@ int main(){
     in_file.close();
     in_file.clear();
     in_file.open(fileNames);
-    
     double B[sz];
     in_file >> sz;
     for(int i=0; i<sz; i++) in_file>>B[i]; 
