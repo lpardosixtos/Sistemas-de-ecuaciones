@@ -33,10 +33,11 @@ bool solveU(double** U, double* B, double* X, int sz){
     for(int i=sz-1; i>=0; i--){
         if(U[i]==0) return false;
         X[i]=B[i];
+        double aux=0;
         for(int j=sz; j>i; j--){
-            double aux=U[i][j]*X[j];
-            X[i]-=aux;
+            aux+=U[i][j]*X[j];
         }
+        X[i]-=aux;
         X[i]/=U[i][i];
     }
     return true;
